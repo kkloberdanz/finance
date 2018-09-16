@@ -33,7 +33,7 @@ def display(dataframes_dct, values):
 def display_values(dataframes_dct):
     all_column_headers = (df.keys() for (_, df) in dataframes_dct.items())
     return [str(header) for header in
-                functools.reduce(lambda x, acc: x & acc, all_column_headers)]
+            functools.reduce(lambda x, acc: x & acc, all_column_headers)]
 
 
 if __name__ == '__main__':
